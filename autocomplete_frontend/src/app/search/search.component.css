@@ -1,0 +1,27 @@
+/* Ensure the form field is responsive */
+.wide-form-field {
+  width: 100%; /* Full width of the parent container */
+  max-width: 600px; /* Maximum width for larger screens */
+}
+
+/* Increase the font size of the input text */
+.wide-form-field input.mat-input-element {
+  font-size: 1.2rem; /* Adjust the size as needed */
+}
+
+/* Ensure the autocomplete options dropdown is wide and responsive */
+.wide-form-field .mat-autocomplete-panel {
+  width: 100% !important; /* Full width of the form field */
+  max-width: 600px !important; /* Maximum width for larger screens */
+}
+
+/* Increase the font size of the autocomplete options */
+.wide-form-field .mat-option {
+  font-size: 1.2rem; /* Adjust the size as needed */
+}
+
+.autocomplete-container {
+  display: flex;
+  justify-content: left; /* Align the form field to the left */
+  width: 50%; /* Adjust width as necessary */
+}

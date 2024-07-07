@@ -1,9 +1,15 @@
-<mat-form-field>
+<div class="autocomplete-container">
+  <!-- MatFormField for input -->
+  <mat-form-field class="wide-form-field">
+    <!-- Input field bound to formControl -->
     <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto" placeholder="Search songs or artists">
+    
+    <!-- MatAutocomplete panel -->
     <mat-autocomplete #auto="matAutocomplete">
+      <!-- MatOption for each suggestion in filteredOptions -->
       <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
         {{ option }}
       </mat-option>
     </mat-autocomplete>
   </mat-form-field>
-  
+</div>
